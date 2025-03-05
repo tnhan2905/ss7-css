@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .post-container {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        .editor-pick {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .image {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 5px;
+        }
+        .category {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c1e5c;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 14px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="editor-pick">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IVCabA9tAHIkHxv1iB4_CYbe0cqGEAvvEA&s "width="80" alt="Star"> EDITOR'S PICK
+    </div>
+    <img class="image" src="data:image/jpeg;base64,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" alt="Khó cứu được Chị Đẹp Đạp Gió 2024">
+    <div class="title"><h2>Khó cứu được Chị Đẹp Đạp Gió 2024</h2></div>
+    <div class="category"><h4>Musik</h4></div>
+    <div class="description">
+        Quy tụ dàn nghệ sĩ nổi tiếng như Ngọc Ánh, Minh Tuyết, Phương Thanh, Tóc Tiên, Minh Hằng... 
+        Chị Đẹp Đạp Gió 2024 không có sức hút, gần như hụt hơi trước các anh trai và loạt sự kiện giải trí khác.
+    </div>
+</div>
+</body>
+</html>
